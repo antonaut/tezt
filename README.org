@@ -9,7 +9,7 @@ I have put the tests in a file test.cpp, using make for build and run.
 
 Example =test.cpp= for testing a Date class.
 
-```c++
+```cpp
 #include <chrono>
 #include <iostream>
 
@@ -19,7 +19,7 @@ Example =test.cpp= for testing a Date class.
 
 All test functions have the same signature.
 
-```c++
+```cpp
 /* void (*fn)(void) */
 
 void simple_lab_test_one( void ) {
@@ -33,7 +33,7 @@ void simple_lab_test_one( void ) {
 
 A main function where you register and setup mocks etc.
 
-```c++
+```cpp
 int main(int argc, char **argv) {
 
     // before is run before every test
@@ -58,7 +58,7 @@ int main(int argc, char **argv) {
 
 * Example Makefile
 
-```Makefile
+```makefile
 CC    = g++
 LDFLAGS = -L /usr/lib/gcc/x86_64-linux-gnu/4.8
 CXXFLAGS = -std=c++11 -g -Wall -pedantic
