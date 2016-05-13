@@ -5,7 +5,7 @@ This is a simple test framework for C++ (using at least c++11).
 
 ## Usage & features
 
-I have put the tests in a file test.cpp, using make for build and run.
+I have put the tests in a file test.cpp, using Make for building and running.
 
 ### Example test.cpp for testing a Date class
 
@@ -27,6 +27,7 @@ All test functions have the same signature.
 
 void simple_lab_test_one( void ) {
     Gregorian g(1900, 1, 1);
+    Gregorian j(1899, 12, 31);
 
     tezt::aneq_op(j, g);
     j++;
