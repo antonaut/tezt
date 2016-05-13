@@ -7,7 +7,7 @@ This is a simple test framework for C++ (using at least c++11).
 
 I have put the tests in a file test.cpp, using make for build and run.
 
-Example =test.cpp= for testing a Date class.
+### Example test.cpp for testing a Date class
 
 
 ```cpp
@@ -34,8 +34,8 @@ void simple_lab_test_one( void ) {
 }
 ```
 
-
-A main function where you register and setup mocks etc.
+A main function where you register the tests, what to do before and
+after them etc.
 
 
 ```cpp
@@ -58,12 +58,13 @@ int main(int argc, char **argv) {
     tezt::add("Test name", simple_lab_test_one);
 
     return tezt::run();
-}    
+}
 ```
 
 
 ## Example Makefile
 
+I run the tests with `make test`.
 
 ```makefile
 CC    = g++
