@@ -1,9 +1,9 @@
-* Tezt
+# Tezt
 
 This is a simple test framework for C++ (using at least c++11).
 
 
-* Usage & features
+## Usage & features
 
 I have put the tests in a file test.cpp, using make for build and run.
 
@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
 ```
 
 
-* Example Makefile
+## Example Makefile
 
 
 ```makefile
